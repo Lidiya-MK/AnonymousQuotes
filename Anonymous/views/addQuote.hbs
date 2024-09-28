@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Quote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/addQuote.css">
+</head>
+<body>
+    <div class="header">
+        
+        <h1 class="title-left">   <a href="/" style="color: white; text-decoration: none;">Anonymous Quotes</a></h1>
+        <h1 class="title-right">Add Your Quote</h1>
+    </div>
+
+    <div class="quote-form-container">
+        <h2>Create a Quote</h2>
+        <textarea id="quote-input" placeholder="Enter your quote (3 to 300 words)..." rows="5"></textarea>
+        <button id="submit-quote">Submit Quote</button>
+        <div id="confirmation-message" class="confirmation-message"></div>
+    </div>
+
+    <script src="/scripts/addquote.js"></script> 
+</body>
+</html>
