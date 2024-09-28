@@ -20,8 +20,13 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     margin: 30px;
+    color: antiquewhite;
 }
 
+.title-left:hover{
+    color: white;
+    color: white;
+}
 
 h1, h2, h3 {
     font-family: 'Playwrite DE Grund', sans-serif;
