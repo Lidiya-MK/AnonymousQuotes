@@ -3,7 +3,7 @@ let currentIndex = 0;
 
 async function fetchAndDisplayRandomQuote() {
     try {
-        const response = await fetch('http://localhost:5000/anonymous');
+        const response = await fetch('http://localhost:3000/anonymous');
         quotes = await response.json();
 
    
@@ -59,7 +59,7 @@ async function updateLike(event) {
     const quoteId = event.target.getAttribute('data-id');
     
     try {
-        const response = await fetch(`http://localhost:5000/anonymous/${quoteId}/likes`, {
+        const response = await fetch(`http://localhost:3000/anonymous/${quoteId}/likes`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ async function updateFlag(event) {
     const quoteId = event.target.getAttribute('data-id');
 
     try {
-        const response = await fetch(`http://localhost:5000/anonymous/${quoteId}/flags`, {
+        const response = await fetch(`http://localhost:3000/anonymous/${quoteId}/flags`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
